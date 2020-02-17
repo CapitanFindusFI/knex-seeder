@@ -1,9 +1,9 @@
 import ISeeder from "./interfaces";
 
 class Seeder {
-    static run(seeder: ISeeder<any>, howMany: Number, attributes: object = {}): Array<any> {
-        const instance: ISeeder<any> = seeder.getInstance();
-        return instance.generate(howMany, attributes);
+    static run<T>(seeder: (new () => ISeeder<T>), howMany: number = 1, attributes: T | null = null): Array<T> {
+        const seed = new seeder();
+        return Array.from(Array(howMany).keys()).map(() => seed.item(attributes))
     }
 }
 

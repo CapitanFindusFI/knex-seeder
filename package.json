@@ -1,7 +1,7 @@
 {
   "name": "knex-seeder",
   "version": "0.0.1",
-  "description": "Utility class to build complex seeds to be used with Knex.js",
+  "description": "Utility class to build dummy data objects with Faker.js, to be used with Knex.js",
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",

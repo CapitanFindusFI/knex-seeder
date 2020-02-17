@@ -1,5 +1,5 @@
 import ISeeder from "./interfaces";
 declare class Seeder {
-    static run(seeder: ISeeder<any>, howMany: Number, attributes?: object): Array<any>;
+    static run<T>(seeder: (new () => ISeeder<T>), howMany?: number, attributes?: T | null): T[];
 }
 export default Seeder;

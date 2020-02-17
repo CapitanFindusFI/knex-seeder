@@ -1,6 +1,4 @@
 interface ISeeder<T> {
-    getInstance(): any;
-    item(attributes: T): T;
-    generate(howMany: Number, attributes: T): Array<T>;
+    item(attributes: T | null): T;
 }
 export default ISeeder;

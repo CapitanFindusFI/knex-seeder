@@ -1,6 +1,6 @@
 {
   "name": "knex-seeder",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utility class to build dummy data objects with Faker.js",
   "main": "index.js",
   "scripts": {

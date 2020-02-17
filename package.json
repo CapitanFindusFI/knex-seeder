@@ -1,7 +1,7 @@
 {
   "name": "knex-seeder",
   "version": "0.0.1",
-  "description": "Utility class to build dummy data objects with Faker.js, to be used with Knex.js",
+  "description": "Utility class to build dummy data objects with Faker.js",
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/CapitanFindusFI/knex-seeder.git"
   },
   "keywords": [
-    "knex",
+    "fakerjs",
     "typescript",
     "seed"
   ],

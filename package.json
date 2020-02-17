@@ -1,5 +1,5 @@
 {
-  "name": "knex-seeder",
+  "name": "js-seeder",
   "version": "1.0.0",
   "description": "Utility class to build dummy data objects with Faker.js",
   "main": "index.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CapitanFindusFI/knex-seeder.git"
+    "url": "git+https://github.com/CapitanFindusFI/js-seeder.git"
   },
   "keywords": [
     "fakerjs",
@@ -26,9 +26,9 @@
   "author": "CapitanFindusFI",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CapitanFindusFI/knex-seeder/issues"
+    "url": "https://github.com/CapitanFindusFI/js-seeder/issues"
   },
-  "homepage": "https://github.com/CapitanFindusFI/knex-seeder#readme",
+  "homepage": "https://github.com/CapitanFindusFI/js-seeder#readme",
   "dependencies": {
     "faker": "^4.1.0"
   },

@@ -1,0 +1,33 @@
+{
+  "name": "knex-seeder",
+  "version": "0.0.1",
+  "description": "Utility class to build complex seeds to be used with Knex.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapitanFindusFI/knex-seeder.git"
+  },
+  "keywords": [
+    "knex",
+    "typescript",
+    "seed"
+  ],
+  "author": "CapitanFindusFI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CapitanFindusFI/knex-seeder/issues"
+  },
+  "homepage": "https://github.com/CapitanFindusFI/knex-seeder#readme",
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  }
+}

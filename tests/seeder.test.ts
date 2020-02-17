@@ -2,21 +2,19 @@ import TestSeeder from "./seeders/testSeeder";
 import FooSeeder from "./seeders/fooSeeder";
 import Seeder from "../src";
 
-const seeder = Seeder;
-
 describe('it should correctly handle different seeds', () => {
     it('should generate a single test object', () => {
-        const generation = seeder.run(TestSeeder);
+        const generation = Seeder.run(TestSeeder);
         expect(generation).toHaveLength(1);
     });
 
     it('should generate two test objects', () => {
-        const generation = seeder.run(TestSeeder, 2);
+        const generation = Seeder.run(TestSeeder, 2);
         expect(generation).toHaveLength(2);
     });
 
     it('should generate a single test object with overridden properties', () => {
-        const generation = seeder.run(TestSeeder, 1, {
+        const generation = Seeder.run(TestSeeder, 1, {
             id: 'ABC'
         });
         const element = generation[0];
@@ -27,17 +25,17 @@ describe('it should correctly handle different seeds', () => {
     });
 
     it('should generate a single object', () => {
-        const generation = seeder.run(FooSeeder);
+        const generation = Seeder.run(FooSeeder);
         expect(generation).toHaveLength(1);
     });
 
     it('should generate two objects', () => {
-        const generation = seeder.run(FooSeeder, 2);
+        const generation = Seeder.run(FooSeeder, 2);
         expect(generation).toHaveLength(2);
     });
 
     it('should generate a single object with overridden properties', () => {
-        const generation = seeder.run(FooSeeder, 1, {
+        const generation = Seeder.run(FooSeeder, 1, {
             number: 100
         });
         const element = generation[0];

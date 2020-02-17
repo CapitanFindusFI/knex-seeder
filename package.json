@@ -2,7 +2,8 @@
   "name": "js-seeder",
   "version": "1.0.0",
   "description": "Utility class to build dummy data objects with Faker.js",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
@@ -22,6 +23,9 @@
     "fakerjs",
     "typescript",
     "seed"
+  ],
+  "files": [
+    "lib/**/*"
   ],
   "author": "CapitanFindusFI",
   "license": "MIT",

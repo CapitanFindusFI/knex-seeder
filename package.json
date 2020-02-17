@@ -4,7 +4,15 @@
   "description": "Utility class to build complex seeds to be used with Knex.js",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -25,9 +33,13 @@
     "faker": "^4.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/faker": "^4.1.9",
     "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "ts-jest": "^24.3.0",
+    "jest": "^25.1.0"
   }
 }

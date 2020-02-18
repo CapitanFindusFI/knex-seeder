@@ -1,5 +1,5 @@
 interface ISeeder<T> {
-    item(attributes: T | null): T
+  item(attributes: T | null): T;
 }
 
-export default ISeeder
+export default ISeeder;

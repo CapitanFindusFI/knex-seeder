@@ -1,6 +1,8 @@
-# Simple Seeder
+# JS Seeder
 This package provides you a simple interface and a class,
 useful to create dummy data starting from a TypeScript interface or a JS object
+
+This package depends on [Faker.js](https://github.com/marak/Faker.js/)
 
 I would recommend using TypeScript to benefit of all of his type checking, as there are a few generic types over here
 

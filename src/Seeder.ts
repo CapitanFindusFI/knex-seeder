@@ -6,4 +6,5 @@ class Seeder {
         return [...new Array(howMany).keys()].map(() => seed.item(attributes));
     }
 }
-export = Seeder;
+
+export default Seeder;

@@ -1,6 +1,6 @@
-import TestSeeder from "./seeders/testSeeder";
+import Seeder = require("../src/Seeder");
 import FooSeeder from "./seeders/fooSeeder";
-import Seeder from "../src";
+import TestSeeder from "./seeders/testSeeder";
 
 describe('it should correctly handle different seeds', () => {
     it('should generate a single test object', () => {

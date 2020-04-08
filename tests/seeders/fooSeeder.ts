@@ -1,5 +1,5 @@
 import * as faker from "faker";
-import ISeeder from "../../src/interfaces";
+import ISeeder from "../../src/interfaces/ISeeder";
 
 interface IFooSeed {
     name?: string
@@ -8,7 +8,7 @@ interface IFooSeed {
 
 class FooSeeder implements ISeeder<IFooSeed> {
 
-    item(attributes: IFooSeed | null = null): IFooSeed {
+    public item(attributes: IFooSeed | null = null): IFooSeed {
         const defaultValues: IFooSeed = {
             name: faker.random.words(1),
             number: faker.random.number(1000)

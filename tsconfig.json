@@ -6,7 +6,7 @@
       "es2015"
     ],
     "declaration": true,
-    "outDir": "./lib",
+    "outDir": "lib",
     "strict": true,
     "downlevelIteration": true
   },
@@ -15,6 +15,7 @@
   ],
   "exclude": [
     "node_modules",
-    "**/tests/*"
+    "tests",
+    "lib"
   ]
 }

@@ -13,9 +13,9 @@ which is `.run`, providing three different parameters (first is mandatory, other
 
 ```typescript
 class Seeder {
-    static run<T>(seeder: (new () => ISeeder<T>), howMany: number = 1, attributes: T | null = null): Array<T> {
+    public static run<T>(seeder: new () => ISeeder<T>, howMany: number = 1, attributes: T | null = null): T[] {
         const seed = new seeder();
-        return Array.from(Array(howMany).keys()).map(() => seed.item(attributes))
+        return [...new Array(howMany).keys()].map(() => seed.item(attributes));
     }
 }
 ```
